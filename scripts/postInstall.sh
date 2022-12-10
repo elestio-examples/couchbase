@@ -2,6 +2,7 @@ set env vars
 set -o allexport; source .env; set +o allexport;
 
 sleep 20s;
+echo "waiting...";
 
 target=$(docker-compose port couchbase 8091)
 
