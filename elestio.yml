@@ -13,7 +13,7 @@ environments:
   - key: ADMIN_PASSWORD
     value: "random_password"
   - key: "DEFAULT_FROM_EMAIL"
-    value: "[DOMAIN]%40vm.elestio.app"
+    value: "[DOMAIN]@vm.elestio.app"
   - key: "EMAIL_HOST"
     value: "172.17.0.1"
   - key: "EMAIL_PORT"
