@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+    couchbase:
+        ports:
+            - '172.17.0.1:8091-8096:8091-8096'
+            - '172.17.0.1:11210-11211:11210-11211'
+        image: couchbase
