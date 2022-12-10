@@ -10,8 +10,18 @@ ports:
 environments:
   - key: COUCHBASE_ADMINISTRATOR_USERNAME
     value: "root"
-  - key: COUCHBASE_ADMINISTRATOR_PASSWORD
+  - key: ADMIN_PASSWORD
     value: "random_password"
+  - key: "DEFAULT_FROM_EMAIL"
+    value: "[DOMAIN]%40vm.elestio.app"
+  - key: "EMAIL_HOST"
+    value: "172.17.0.1"
+  - key: "EMAIL_PORT"
+    value: "25"
+  - key: "EMAIL_HOST_USER"
+    value: ""
+  - key: "EMAIL_HOST_PASSWORD"
+    value: ""
 
 config:
   runTime: "dockerCompose"
@@ -33,4 +43,4 @@ webUI:
   - url: "https://[CI_CD_DOMAIN]"
     label: "Couchbase Admin"
     login: "root"
-    password: "[COUCHBASE_ADMINISTRATOR_PASSWORD]"
+    password: "[ADMIN_PASSWORD]"
