@@ -8,16 +8,16 @@ ports:
     path: "/"
     isAuth: false
 environments:
-  - key: SOFTWARE_VERSION_TAG
-    value: "lts-jdk11"
-  - key: JENKINS_USERNAME
+  - key: COUCHBASE_ADMINISTRATOR_USERNAME
     value: "root"
-  - key: JENKINS_PASSWORD
+  - key: COUCHBASE_ADMINISTRATOR_PASSWORD
     value: "random_password"
-  - key: "JENKINS_EMAIL"
-    value: "[EMAIL]"
-  - key: "ADMIN_PASSWORD"
+  - key: COUCHBASE_RBAC_USERNAME
+    value: "root"
+  - key: COUCHBASE_RBAC_PASSWORD
     value: "random_password"
+  - key: COUCHBASE_RBAC_NAME
+    value: "root"
 
 config:
   runTime: "dockerCompose"
@@ -39,4 +39,4 @@ webUI:
   - url: "https://[CI_CD_DOMAIN]"
     label: "Couchbase Admin"
     login: "root"
-    password: "[ADMIN_PASSWORD]"
+    password: "COUCHBASE_ADMINISTRATOR_PASSWORD"

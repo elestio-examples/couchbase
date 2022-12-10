@@ -1,7 +1,19 @@
 version: '3.3'
 services:
     couchbase:
+        image: couchbase:latest
+        restart: always
         ports:
             - '172.17.0.1:8091-8096:8091-8096'
             - '172.17.0.1:11210-11211:11210-11211'
-        image: couchbase
+        environment:
+            - CLUSTER_NAME=couchbase
+            - COUCHBASE_ADMINISTRATOR_USERNAME=${COUCHBASE_ADMINISTRATOR_USERNAME}
+            - COUCHBASE_ADMINISTRATOR_PASSWORD=${COUCHBASE_ADMINISTRATOR_PASSWORD}
+            - COUCHBASE_BUCKET=projects
+            - COUCHBASE_BUCKET_RAMSIZE=512
+            - COUCHBASE_RBAC_USERNAME=${COUCHBASE_RBAC_USERNAME}
+            - COUCHBASE_RBAC_PASSWORD=${COUCHBASE_RBAC_PASSWORD}
+            - COUCHBASE_RBAC_NAME=${COUCHBASE_RBAC_NAME}
+            - COUCHBASE_RAM_SIZE=2048
+            - COUCHBASE_INDEX_RAM_SIZE=512
