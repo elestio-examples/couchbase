@@ -1,4 +1,5 @@
-
+set env vars
+set -o allexport; source .env; set +o allexport;
 
 target=$(docker-compose port couchbase 8091)
 
