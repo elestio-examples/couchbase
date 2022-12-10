@@ -20,8 +20,8 @@ You can can open Couchebase UI here:
 
 To configure the SMTP server, click on Settings in the left menu, then on the Alert tab.
 
-<img src="./steps/step-01.png" style='width: 300px; max-width:100%;'/>
-<img src="./steps/step-02.png" style='width: 300px; max-width:100%;'/>
+<img src="./steps/step-01.png" style='width: 100px; max-width:100%;'/>
+<img src="./steps/step-02.png" style='width: 500px; max-width:100%;'/>
 
 Enable the Enable email alerts option, then enter the following credentials:
 
