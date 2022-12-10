@@ -12,12 +12,6 @@ environments:
     value: "root"
   - key: COUCHBASE_ADMINISTRATOR_PASSWORD
     value: "random_password"
-  - key: COUCHBASE_RBAC_USERNAME
-    value: "root"
-  - key: COUCHBASE_RBAC_PASSWORD
-    value: "random_password"
-  - key: COUCHBASE_RBAC_NAME
-    value: "root"
 
 config:
   runTime: "dockerCompose"
@@ -39,4 +33,4 @@ webUI:
   - url: "https://[CI_CD_DOMAIN]"
     label: "Couchbase Admin"
     login: "root"
-    password: "COUCHBASE_ADMINISTRATOR_PASSWORD"
+    password: "[COUCHBASE_ADMINISTRATOR_PASSWORD]"
