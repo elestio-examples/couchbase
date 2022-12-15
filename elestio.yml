@@ -22,6 +22,8 @@ environments:
     value: ""
   - key: "EMAIL_HOST_PASSWORD"
     value: ""
+  - key: "DOMAIN"
+    value: "[CI_CD_DOMAIN]"
 
 config:
   runTime: "dockerCompose"

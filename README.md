@@ -50,7 +50,7 @@ To connect from node.js you'll need the package couchbase <a href="https://www.n
 
         try {
             var cluster = await couchbase.connect(
-            "couchbase://couchbase-u353.vm.elestio.app",
+            "couchbase://[DOMAIN]",
             {
                 username: "root",
                 password: [ADMIN_PASSWORD],
