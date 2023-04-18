@@ -10,7 +10,7 @@ Deploy Couchbase server with CI/CD on Elestio
 
 # Once deployed ...
 
-You can can open Couchebase UI here:
+You can open Couchebase UI here:
 
     URL: https://[CI_CD_DOMAIN]
     Login: root
