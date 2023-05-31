@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  couchbase:
+    image: elestio4test/couchbase:latest
+    restart: always
+    ports:
+      - "8091-8096:8091-8096"
+      - "11210-11211:11210-11211"
+    volumes:
+      - ./data:/opt/couchbase/var
