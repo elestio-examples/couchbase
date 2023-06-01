@@ -12,6 +12,8 @@ environments:
     value: "root"
   - key: ADMIN_PASSWORD
     value: "random_password"
+  - key: "ADMIN_EMAIL"
+    value: "[EMAIL]"
   - key: "DEFAULT_FROM_EMAIL"
     value: "[DOMAIN]@vm.elestio.app"
   - key: "EMAIL_HOST"
@@ -24,6 +26,8 @@ environments:
     value: ""
   - key: "DOMAIN"
     value: "[CI_CD_DOMAIN]"
+  - key: "PIPELINE_NAME"
+    value: "[PIPELINE_NAME]"
 
 config:
   runTime: "dockerCompose"
