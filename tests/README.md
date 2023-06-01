@@ -10,7 +10,7 @@
 
 [Couchbase](https://www.couchbase.com/) is an award-winning distributed NoSQL cloud database that delivers unmatched versatility, performance, scalability, and financial value for all of your cloud, mobile, on-premises, hybrid, distributed cloud, and edge computing applications.
 
-<img src="https://raw.githubusercontent.com/elestio-examples/couchbase/main/couchbase.gif" alt="couchbase" width="800">
+<img src="https://raw.githubusercontent.com/elestio-examples/couchbase/main/couchbase.png" alt="couchbase" width="800">
 
 [![deploy](https://github.com/elestio-examples/couchbase/raw/main/deploy-on-elestio.png)](https://dash.elest.io/deploy?source=cicd&social=dockerCompose&url=https://github.com/elestio-examples/couchbase)
 
