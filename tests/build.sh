@@ -22,4 +22,3 @@ for folder in $folders; do
 done
 
 docker build --no-cache . --tag elestio4test/couchbase:latest;
-TAG_TO_CHANGE
